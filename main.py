@@ -180,6 +180,7 @@ async def get_urls_cryptonews(con):
                 except:
                     print(f'{url_link} - Слишком длинный текст')
         await asyncio.sleep(300)
+        bot.send_message(chat_id=383387282, text='work')
 
 create_news_table(con)
 loop = asyncio.get_event_loop()
